@@ -26,7 +26,9 @@ soma=0
 for linha in matriz:
     for coluna in linha:
         soma+=coluna
-
+contador=0
 for i in range (len(matriz)):
     for j in range(len(matriz[0])):
         soma+= matriz[i][j]
+        contador+=1
+media=soma/contador
