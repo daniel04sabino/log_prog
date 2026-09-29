@@ -20,3 +20,13 @@ matriz=[]
 for i in range(2):
     for j in range(2):
         matriz[i][j]=int(input('Digite um número: '))
+
+
+soma=0
+for linha in matriz:
+    for coluna in linha:
+        soma+=coluna
+
+for i in range (len(matriz)):
+    for j in range(len(matriz[0])):
+        soma+= matriz[i][j]
