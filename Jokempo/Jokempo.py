@@ -40,7 +40,7 @@ def escolher_jogador(escolha):
     jogador = escolha
     print(f"Jogador escolheu: {jogador}")
 
-def escolher_jogador(escolha):
+def escolher_jogador2(escolha):
     global jogador2
     jogador2 = escolha
     print(f"Jogador escolheu: {jogador2}")
@@ -73,22 +73,23 @@ def x1():
         
     botaoPapel=Button(janela,image=imgPapel,command=lambda: escolher_jogador(papel),borderwidth=0)
     botaoPapel.place(x=395,y=300)
-    
+    # if jogador!= ():
     return x1_2
+    
 
 def x1_2():
     Jog1=Label(janela,text='Jogador 2')
     Jog1.place(x=400,y=100)
 
     botaoPedra=Button(
-    janela,image=imgPedra,command=lambda jogador2:pedra,borderwidth=0,border=0)
+    janela,image=imgPedra,command=lambda :escolher_jogador2(pedra),borderwidth=0,border=0)
     botaoPedra.place(x=295,y=300)
         
     botaoTesoura=Button(
-    janela,image=imgTesoura,command=lambda jogador2:tesoura,borderwidth=0)
+    janela,image=imgTesoura,command=lambda :escolher_jogador2(tesoura),borderwidth=0)
     botaoTesoura.place(x=495,y=300)
         
-    botaoPapel=Button(janela,image=imgPapel,command=lambda jogador2:papel,borderwidth=0)
+    botaoPapel=Button(janela,image=imgPapel,command=lambda :escolher_jogador2(papel),borderwidth=0)
     botaoPapel.place(x=395,y=300)
 
 
@@ -106,25 +107,25 @@ botao_cpu.place(x=450,y=150)
 
 
 
-def botaoPedra():
-    Button(
-    janela,image=imgPedra,command=lambda:pedra,borderwidth=0,border=0)
-    botaoPedra.place(x=295,y=300)
-    # jogador=(pedra)
-    return jogador(pedra)
+# def botaoPedra():
+#     Button(
+#     janela,image=imgPedra,command=lambda:pedra,borderwidth=0,border=0)
+#     botaoPedra.place(x=295,y=300)
+#     # jogador=(pedra)
+#     return jogador(pedra)
 
-def botaoPapel():
-    Button(janela,image=imgPapel,command=lambda jogador:papel,borderwidth=0)
-    botaoPapel.place(x=395,y=300)
-    # jogador=(papel)
-    return jogador(papel)
+# def botaoPapel():
+#     Button(janela,image=imgPapel,command=lambda jogador:papel,borderwidth=0)
+#     botaoPapel.place(x=395,y=300)
+#     # jogador=(papel)
+#     return jogador(papel)
 
-def botaoTesoura():
-    Button(
-    janela,image=imgTesoura,command=lambda:tesoura,borderwidth=0)
-    botaoTesoura.place(x=495,y=300)
-     # jogador=(tesoura)
-    return jogador(tesoura)
+# def botaoTesoura():
+#     Button(
+#     janela,image=imgTesoura,command=lambda:tesoura,borderwidth=0)
+#     botaoTesoura.place(x=495,y=300)
+#      # jogador=(tesoura)
+#     return jogador(tesoura)
 
 
 if jogador_x_jogador:

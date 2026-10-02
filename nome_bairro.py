@@ -2,6 +2,8 @@
 # dez pessoas. O programa exibirá o nome e bairro das pessoas em ordem
 # alfabética.
 
+# OK Codiguinho ok
+
 lista = []
 for i in range(0, 10):
     nome = input('Digite o seu nome: ')

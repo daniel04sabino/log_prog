@@ -18,10 +18,11 @@
 
 matriz=[]
 for i in range(2):
+    lista = []
     for j in range(2):
-        matriz[i][j]=int(input('Digite um número: '))
-
-
+        lista.append(int(input('Digite um número: ')))
+    matriz.append(lista)
+print(matriz)
 soma=0
 for linha in matriz:
     for coluna in linha:
