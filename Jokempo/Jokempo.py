@@ -64,22 +64,36 @@ def x1():
     Jog1.place(x=400,y=100)
 
     botaoPedra=Button(
-    janela,image=imgPedra,command=lambda: escolher_jogador(pedra),borderwidth=0,border=0)
+    janela,image=imgPedra,command=lambda: escolher_jogador(pedra))
     botaoPedra.place(x=295,y=300)
         
     botaoTesoura=Button(
-    janela,image=imgTesoura,command=lambda:escolher_jogador(tesoura),borderwidth=0)
+    janela,image=imgTesoura,command=lambda:escolher_jogador(tesoura))
     botaoTesoura.place(x=495,y=300)
         
-    botaoPapel=Button(janela,image=imgPapel,command=lambda: escolher_jogador(papel),borderwidth=0)
+    botaoPapel=Button(janela,image=imgPapel,command=lambda: escolher_jogador(papel))
     botaoPapel.place(x=395,y=300)
+
+    if jogador in jogadas:
+        x1_2()
+    # def destacar_botao(botao_selecionado):
+    #     for btn in botaoPedra, botaoPapel, botaoTesoura:
+    #      btn.config(relief="flat", bd=0, highlightthickness=0)
+
+    #     botao_selecionado.config(
+    #     relief="solid", 
+    #     bd=3, 
+    #     highlightbackground="green", 
+    #     highlightcolor="green", 
+    #     highlightthickness=3
+    # )
     # if jogador!= ():
-    return x1_2
+    
     
 
 def x1_2():
-    Jog1=Label(janela,text='Jogador 2')
-    Jog1.place(x=400,y=100)
+    Jog2=Label(janela,text='Jogador 2')
+    Jog2.place(x=400,y=100)
 
     botaoPedra=Button(
     janela,image=imgPedra,command=lambda :escolher_jogador2(pedra),borderwidth=0,border=0)
