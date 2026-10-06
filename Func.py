@@ -26,3 +26,17 @@ def vereficar_senha(senha):
     Descobri se tem 8 digitos na senha
     '''
     return len(senha)>=8
+
+def fatorial(numero):
+    if numero==0:
+        return 1
+    return numero * fatorial(numero-1)
+
+# print(fatorial(5))
+
+def fibonacci(numero):
+    if numero<=1:
+        return numero
+    return(fibonacci(numero-1)+
+           fibonacci(numero-2))
+# print(fibonacci(20))

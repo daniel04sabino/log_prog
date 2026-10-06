@@ -19,6 +19,12 @@ for i in range (3):
 valores_ordenados= sorted(valores)
 valores_validos = valores_ordenados== list(range(1,10))
 
+#pythones
+# valores=[matriz[i][j] for i in range(3) for j in range(3)]
+
+
+#--------------------------------------------------------------------------------------------
+
 soma =0
 somas=[]
 for linha in matriz:
@@ -29,3 +35,16 @@ for linha in matriz:
 #ainda falta
 
 #Versão2
+
+
+# matriz=[]
+# for i in range (3):
+#     linha=[]
+#     for j in range(3):
+#         numero=int(input('Digite um número entre 1 e 9: '))
+#         while numero<1 or numero>9:
+#             numero=int(input('Digite um número entre 1 e 9: '))
+        
+#         linha.append(numero)
+    
+#     matriz.append(linha)
