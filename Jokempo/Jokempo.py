@@ -39,6 +39,7 @@ def escolher_jogador(escolha):
     global jogador
     jogador = escolha
     print(f"Jogador escolheu: {jogador}")
+    
 
 def escolher_jogador2(escolha):
     global jogador2
