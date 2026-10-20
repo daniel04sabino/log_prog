@@ -29,17 +29,18 @@ print(diferente)
 diferente2= permissoes_rota.difference(usuario_techlead)
 print(diferente2)
 
-if permissoes_rota.issubset(usuario_analista):
-    print("Analista: acesso permitido!")
-else:
-    print("Analista: acesso negado!")
-    faltando = permissoes_rota.difference(usuario_analista)
-    print("Permissões faltantes:", faltando)
 
-# Verificando o acesso do techlead
-if permissoes_rota.issubset(usuario_techlead):
-    print("Techlead: acesso permitido!")
-else:
-    print("Techlead: acesso negado!")
-    faltando = permissoes_rota.difference(usuario_techlead)
-    print("Permissões faltantes:", faltando)
+# if permissoes_rota.issubset(usuario_analista):
+#     print("Analista: acesso permitido!")
+# else:
+#     print("Analista: acesso negado!")
+#     faltando = permissoes_rota.difference(usuario_analista)
+#     print("Permissões faltantes:", faltando)
+
+# # Verificando o acesso do techlead
+# if permissoes_rota.issubset(usuario_techlead):
+#     print("Techlead: acesso permitido!")
+# else:
+#     print("Techlead: acesso negado!")
+#     faltando = permissoes_rota.difference(usuario_techlead)
+#     print("Permissões faltantes:", faltando)
