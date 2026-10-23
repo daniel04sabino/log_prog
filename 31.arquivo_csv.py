@@ -12,9 +12,9 @@ cabecalho = ['marca', 'modelo', 'ano']
 # escrever um csv a partir do dicionario
 with open('carros.csv', 'w', encoding='utf-8', 
           newline='') as arquivo:
-    # escritor = csv.DictWriter(arquivo, fieldnames=cabecalho,
-                            #   delimiter=';')
-    escritor = csv.writer(arquivo, delimiter=';')
+    escritor = csv.DictWriter(arquivo, fieldnames=cabecalho,
+                              delimiter=';')
+    # escritor = csv.writer(arquivo, delimiter=';')
     
     # primeiro escrevo o cabeçalho na primeira linha
     escritor.writeheader()

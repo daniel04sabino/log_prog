@@ -1,0 +1,7 @@
+id_pedido;cliente;produto;quantidade;preco_unitario;categoria
+101;Ana Souza;Teclado Mecanico;2;180.00;Perifericos
+102;Marcos Lima;Monitor 27;1;1250.00;Monitores
+103;Beatriz Ramos;Mouse Pad Gamer;6;45.00;Acessorios
+104;Lucas Silva;Cadeira Ergonomica;1;920.00;Moveis
+105;Fernanda Dias;Cabo HDMI 2.1;10;35.00;Cabos
+106;Rodrigo Prado;Headset Sem Fio;5;320.00;Audio
